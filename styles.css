@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+}
+.general{
+    display: block;
+    margin:0 auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.sedans,.suvs,.luxury{
+    min-width: 15em;
+    max-width: 15em;
+    margin: 0 10px;
+    padding: 20px;
+    color: white;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+h2{
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    padding: 10px;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+p{
+    padding-bottom:50% ;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+button{
+    border: none;
+    padding:15px 20px;
+    border-radius: 40px;
+    background-color: hsl(0, 0%, 95%);
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+@media (min-width: 900px) {
+    .general{
+        display: flex;
+    }
+    .sedans,.suvs,.luxury{
+        margin: 10px 0;
+    }
+}
